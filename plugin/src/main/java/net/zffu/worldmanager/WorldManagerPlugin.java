@@ -10,6 +10,8 @@ public class WorldManagerPlugin extends JavaPlugin {
     public void onEnable() {
         INSTANCE = this;
         saveDefaultConfig();
+
+        new Messages(getConfig());
     }
 
     @Override
