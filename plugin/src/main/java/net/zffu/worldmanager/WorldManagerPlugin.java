@@ -37,7 +37,7 @@ public class WorldManagerPlugin extends JavaPlugin {
                 continue;
             }
 
-            PluginWorld world = new PluginWorld(new File(origin), key, section.getBoolean(key + ".clear-on-stop", true), section.getBoolean(key + ".autoload", false))
+            PluginWorld world = new PluginWorld(new File(origin), key, section.getBoolean(key + ".clear-on-stop", true), section.getBoolean(key + ".autoload", false));
 
             if(world.loadOnStart) {
                 try {
