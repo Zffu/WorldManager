@@ -1,5 +1,7 @@
 package net.zffu.worldmanager.api;
 
+import java.io.IOException;
+
 /**
  * <p>A world that can be reset.</p>
  * @since 1.0.0
@@ -17,7 +19,7 @@ public interface IResettableWorld<K> {
     /**
      * <p>Creates a temporary version of the world.</p>
      */
-    void createTemp();
+    void createTemp() throws IOException;
 
     /**
      * <p>Unloads the world from the server.</p>
