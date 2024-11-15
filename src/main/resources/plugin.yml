@@ -1,0 +1,4 @@
+name: WorldManager
+version: '${project.version}'
+main: net.zffu.worldmanager.WorldManager
+description: A plugin that allows to setup worlds that get automatically reset.
