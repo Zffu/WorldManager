@@ -1,5 +1,6 @@
 package net.zffu.worldmanager;
 
+import net.zffu.worldmanager.commands.impl.LoadWorldCommand;
 import net.zffu.worldmanager.commands.impl.MainCommand;
 import net.zffu.worldmanager.commands.impl.WorldsCommand;
 import net.zffu.worldmanager.worlds.PluginWorld;
@@ -8,6 +9,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class WorldManagerPlugin extends JavaPlugin {
@@ -15,7 +17,7 @@ public class WorldManagerPlugin extends JavaPlugin {
     public static WorldManagerPlugin INSTANCE;
     public static int LOADED;
 
-    public List<PluginWorld> worlds = new ArrayList<>();
+    public HashMap<String, PluginWorld> worlds = new HashMap<>();
 
     @Override
     public void onEnable() {
@@ -48,13 +50,14 @@ public class WorldManagerPlugin extends JavaPlugin {
                 }
             }
 
-            this.worlds.add(world);
+            this.worlds.put(key, world);
         }
         this.getLogger().info("Loaded " + worlds.size() + " worlds!");
 
         this.getLogger().info("Hooking up commands...");
         this.getCommand("worldmanager").setExecutor(new MainCommand());
         this.getCommand("worlds").setExecutor(new WorldsCommand());
+        this.getCommand("loadworld").setExecutor(new LoadWorldCommand());
     }
 
     @Override

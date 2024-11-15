@@ -11,3 +11,6 @@ commands:
   worlds:
     description: Provides useful information about worlds handled by WorldManager
     aliases: ["ws", "w", "worlds", "world"]
+  loadworld:
+    description: Loads a world / worlds
+    aliases: ["loadworlds", "lw", "lws", "lworlds", "lworld"]
