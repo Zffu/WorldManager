@@ -7,11 +7,14 @@
   <groupId>net.zffu</groupId>
   <artifactId>worldmanager</artifactId>
   <version>1.0.0</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>WorldManager</name>
+    <modules>
+        <module>api</module>
+    </modules>
 
-  <properties>
+    <properties>
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
