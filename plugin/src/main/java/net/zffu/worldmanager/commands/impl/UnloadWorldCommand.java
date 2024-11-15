@@ -21,7 +21,7 @@ public class UnloadWorldCommand extends WorldManagerCommand {
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if(!super.onCommand(commandSender, command, s, strings)) return false;
 
-        if(strings.length > 1) {
+        if(strings.length < 1) {
             commandSender.sendMessage(Messages.PREFIX + "§cUsage: /unloadworld <worlds>");
             return false;
         }
