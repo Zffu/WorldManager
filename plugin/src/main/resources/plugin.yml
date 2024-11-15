@@ -4,3 +4,7 @@ author: Zffu
 website: https://github.com/Zffu/WorldManager
 version: "1.0.0"
 main: "net.zffu.worldmanager.WorldManagerPlugin"
+commands:
+  worldmanager:
+    description: The main command of WorldManager.
+    aliases: [wm, worldm, wmanager]
