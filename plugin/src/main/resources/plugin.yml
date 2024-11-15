@@ -1,0 +1,6 @@
+name: WorldManager
+description: WorldManager is a simple plugin allowing worlds to be automatically reset on demand.
+author: Zffu
+website: https://github.com/Zffu/WorldManager
+version: "1.0.0"
+main: "net.zffu.worldmanager.WorldManagerPlugin"

@@ -12,6 +12,7 @@
   <name>WorldManager</name>
     <modules>
         <module>api</module>
+        <module>plugin</module>
     </modules>
 
     <properties>
