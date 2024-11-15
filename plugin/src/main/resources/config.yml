@@ -32,6 +32,7 @@ permissions:
   worlds: "worldmanager.commands.worlds"
   load-world: "worldmanager.loadworld"
   unload-world: "worldmanager.unloadworld"
+  create-world: "worldmanager.createworld"
 
 #
 # Configure your messages here.
