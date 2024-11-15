@@ -14,3 +14,6 @@ commands:
   loadworld:
     description: Loads a world / worlds
     aliases: ["loadworlds", "lw", "lws", "lworlds", "lworld"]
+  unloadworld:
+    description: Unloads a world / worlds
+    aliases: ["unloadworlds", "uw", "uws", "uworlds", "uworld"]

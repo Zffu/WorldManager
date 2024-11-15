@@ -2,6 +2,7 @@ package net.zffu.worldmanager;
 
 import net.zffu.worldmanager.commands.impl.LoadWorldCommand;
 import net.zffu.worldmanager.commands.impl.MainCommand;
+import net.zffu.worldmanager.commands.impl.UnloadWorldCommand;
 import net.zffu.worldmanager.commands.impl.WorldsCommand;
 import net.zffu.worldmanager.worlds.PluginWorld;
 import org.bukkit.configuration.ConfigurationSection;
@@ -58,6 +59,7 @@ public class WorldManagerPlugin extends JavaPlugin {
         this.getCommand("worldmanager").setExecutor(new MainCommand());
         this.getCommand("worlds").setExecutor(new WorldsCommand());
         this.getCommand("loadworld").setExecutor(new LoadWorldCommand());
+        this.getCommand("unloadworld").setExecutor(new UnloadWorldCommand());
     }
 
     @Override

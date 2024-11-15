@@ -9,12 +9,12 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 
 /**
- * <p>Handles "/loadworld" command.</p>
+ * <p>Handles "/unloadworld" command.</p>
  */
-public class LoadWorldCommand extends WorldManagerCommand {
+public class UnloadWorldCommand extends WorldManagerCommand {
 
-    public LoadWorldCommand() {
-        super(Permissions.LOAD_WORLDS_PERMISSION);
+    public UnloadWorldCommand() {
+        super(Permissions.UNLOAD_WORLDS_PERMISSION);
     }
 
     @Override
@@ -22,7 +22,7 @@ public class LoadWorldCommand extends WorldManagerCommand {
         if(!super.onCommand(commandSender, command, s, strings)) return false;
 
         if(strings.length > 1) {
-            commandSender.sendMessage(Messages.PREFIX + "§cUsage: /loadworld <worlds>");
+            commandSender.sendMessage(Messages.PREFIX + "§cUsage: /unloadworld <worlds>");
             return false;
         }
 
@@ -30,15 +30,15 @@ public class LoadWorldCommand extends WorldManagerCommand {
             PluginWorld world = WorldManagerPlugin.INSTANCE.worlds.get(name);
 
             if(world == null) {
-                commandSender.sendMessage(Messages.PREFIX + Messages.ERROR_LOADING_WORLD.replace("%s", name));
+                commandSender.sendMessage(Messages.PREFIX + Messages.ERROR_UNLOADING_WORLD.replace("%s", name));
                 continue;
             }
 
             try {
-                world.load();
-                commandSender.sendMessage(Messages.PREFIX + Messages.LOADED_WORLD.replace("%s", name));
+                world.unload();
+                commandSender.sendMessage(Messages.PREFIX + Messages.UNLOADED_WORLD.replace("%s", name));
             } catch (Exception e) {
-                commandSender.sendMessage(Messages.PREFIX + Messages.ERROR_LOADING_WORLD.replace("%s", name));
+                commandSender.sendMessage(Messages.PREFIX + Messages.ERROR_UNLOADING_WORLD.replace("%s", name));
                 e.printStackTrace();
             }
         }
