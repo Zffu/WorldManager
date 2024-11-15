@@ -12,6 +12,7 @@ public class WorldManagerPlugin extends JavaPlugin {
         saveDefaultConfig();
 
         new Messages(getConfig());
+        new Permissions(getConfig());
     }
 
     @Override
