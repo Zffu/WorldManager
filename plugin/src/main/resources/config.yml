@@ -1,0 +1,45 @@
+#__        __         _     _   __  __
+#\ \      / /__  _ __| | __| | |  \/  | __ _ _ __   __ _  __ _  ___ _ __
+# \ \ /\ / / _ \| '__| |/ _` | | |\/| |/ _` | '_ \ / _` |/ _` |/ _ \ '__|
+#  \ V  V / (_) | |  | | (_| | | |  | | (_| | | | | (_| | (_| |  __/ |
+#   \_/\_/ \___/|_|  |_|\__,_| |_|  |_|\__,_|_| |_|\__,_|\__, |\___|_|
+#                                                        |___/
+# By Zffu
+
+#
+# Configure your worlds here.
+#
+worlds:
+
+  # An example world
+  exampleWorld:
+
+    # The name of the original world.
+    origin: "world"
+
+    # Should WorldManager clear this temporary world out when the server stops.
+    clear-on-stop: true
+
+    # Should WorldManager load this world when starting up.
+    autoload: true
+
+
+#
+# Configure the permissions here.
+#
+permissions:
+  help: "worldmanager.help"
+  worlds: "worldmanager.commands.worlds"
+  load-world: "worldmanager.loadworld"
+  unload-world: "worldmanager.unloadworld"
+
+#
+# Configure your messages here.
+#
+messages:
+  prefix: "§8[§bWorldManager§8] §r"
+  no-permission: "§cYou do not have the required permissions to perform this action!"
+  loaded-world: "§aSuccessfully loaded world %s"
+  error-loading-world: "§cThere was an error while loading the world %s!"
+  unloaded-world: "§aSuccessfully unloaded world %s"
+  error-unloading-world: "§cThere was an error while unloading the world%s!"
