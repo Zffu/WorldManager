@@ -43,5 +43,5 @@ messages:
   loaded-world: "§aSuccessfully loaded world %s"
   error-loading-world: "§cThere was an error while loading the world %s!"
   unloaded-world: "§aSuccessfully unloaded world %s"
-  error-unloading-world: "§cThere was an error while unloading the world%s!"
+  error-unloading-world: "§cThere was an error while unloading the world %s!"
   created-world: "§aSuccessfully created world! Use /loadworld to load the world"

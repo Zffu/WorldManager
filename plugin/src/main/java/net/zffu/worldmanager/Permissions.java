@@ -17,9 +17,9 @@ public class Permissions {
     public Permissions(FileConfiguration configuration) {
         HELP_PERMISSION = configuration.getString("permission.help");
         WORLD_COMMAND_PERMISSION = configuration.getString("permission.commands.worlds");
-        LOAD_WORLDS_PERMISSION = configuration.getString("permission.loadworld");
-        UNLOAD_WORLDS_PERMISSION = configuration.getString("permission.unloadworld");
-        CREATE_WORLD_PERMISSION = configuration.getString("permission.createworld");
+        LOAD_WORLDS_PERMISSION = configuration.getString("permission.load-world");
+        UNLOAD_WORLDS_PERMISSION = configuration.getString("permission.unload-world");
+        CREATE_WORLD_PERMISSION = configuration.getString("permission.create-world");
     }
 
 }
