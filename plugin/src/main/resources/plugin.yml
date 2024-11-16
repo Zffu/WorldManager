@@ -17,3 +17,6 @@ commands:
   unloadworld:
     description: Unloads a world / worlds
     aliases: ["unloadworlds", "uw", "uws", "uworlds", "uworld"]
+  createworld:
+    description: Creates a world that is handled by WorldManager.
+    aliases: ["cw", "createw"]
