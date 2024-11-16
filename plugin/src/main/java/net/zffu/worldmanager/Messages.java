@@ -13,6 +13,7 @@ public class Messages {
     public static String ERROR_LOADING_WORLD = "";
     public static String UNLOADED_WORLD = "";
     public static String ERROR_UNLOADING_WORLD = "";
+    public static String CREATE_WORLD = "";
 
     /**
      * <p>Initiates the messages values.</p>
@@ -25,6 +26,7 @@ public class Messages {
         ERROR_LOADING_WORLD = configuration.getString("messages.error-loading-world");
         UNLOADED_WORLD = configuration.getString("messages.unloaded-world");
         ERROR_UNLOADING_WORLD = configuration.getString("messages.error-unloading-world");
+        CREATE_WORLD = configuration.getString("messages.created-world");
     }
 
 }

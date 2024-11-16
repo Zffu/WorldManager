@@ -7,12 +7,12 @@ import java.io.File;
 
 public class PluginWorld extends ResettableWorld {
 
-    public final boolean resetOnLoad;
+    public final boolean resetOnStop;
     public final boolean loadOnStart;
 
-    public PluginWorld(File origin, String name, boolean resetOnLoad, boolean loadOnStart) {
+    public PluginWorld(File origin, String name, boolean resetOnStop, boolean loadOnStart) {
         super(origin, name);
-        this.resetOnLoad = resetOnLoad;
+        this.resetOnStop = resetOnStop;
         this.loadOnStart = loadOnStart;
     }
 
