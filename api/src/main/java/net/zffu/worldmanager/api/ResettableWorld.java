@@ -42,6 +42,8 @@ public class ResettableWorld implements IResettableWorld<World> {
     public void createTemp() throws IOException {
         if(this.world != null) return;
 
+        if(this.activeWorld.toFile().exists()) Files.delete(this.activeWorld);
+
         Files.copy(this.sourceWorld, this.activeWorld);
     }
 
