@@ -19,10 +19,10 @@ public class WorldsCommand extends WorldManagerCommand {
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if(!super.onCommand(commandSender, command, s, strings)) return false;
 
-        commandSender.sendMessage("");
+        commandSender.sendMessage("§7");
         commandSender.sendMessage("§fWorlds handled trough WorldManager: §b" + WorldManagerPlugin.INSTANCE.worlds.size());
         commandSender.sendMessage("§fCurrently loaded: §b" + WorldManagerPlugin.LOADED);
-        commandSender.sendMessage("");
+        commandSender.sendMessage("§7");
 
         return true;
     }

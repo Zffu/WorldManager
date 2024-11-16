@@ -21,7 +21,7 @@ public class Messages {
      */
     public Messages(FileConfiguration configuration) {
         PREFIX = configuration.getString("messages.prefix");
-        NO_PERMISSION = configuration.getString("messages.no-permissions");
+        NO_PERMISSION = configuration.getString("messages.no-permission");
         LOADED_WORLD = configuration.getString("messages.loaded-world");
         ERROR_LOADING_WORLD = configuration.getString("messages.error-loading-world");
         UNLOADED_WORLD = configuration.getString("messages.unloaded-world");

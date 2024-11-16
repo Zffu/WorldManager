@@ -20,7 +20,7 @@ public class WorldManagerCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if(!(commandSender instanceof ConsoleCommandSender) && !commandSender.hasPermission(permission)) {
-            commandSender.sendMessage(Messages.NO_PERMISSION);
+            commandSender.sendMessage(Messages.PREFIX + Messages.NO_PERMISSION);
             return false;
         }
         return true;

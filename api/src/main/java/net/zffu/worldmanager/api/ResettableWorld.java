@@ -42,7 +42,7 @@ public class ResettableWorld implements IResettableWorld<World> {
     public void createTemp() throws IOException {
         if(this.world != null) return;
 
-        if(this.activeWorld.toFile().exists()) Files.delete(this.activeWorld);
+        if(this.activeWorld.toFile().exists()) Files.walk(this.activeWorld).map(Path::toFile).forEach(File::delete);
 
         Files.copy(this.sourceWorld, this.activeWorld);
     }
@@ -51,6 +51,7 @@ public class ResettableWorld implements IResettableWorld<World> {
     public void unload() throws Exception {
         if(this.world == null) throw new IllegalStateException("Tried to unload world even tho the world is currently unloaded!");
 
+        Bukkit.getServer().unloadWorld(this.world, false);
         Files.walk(this.activeWorld).map(Path::toFile).forEach(File::delete);
     }
 

@@ -15,11 +15,11 @@ public class Permissions {
 
 
     public Permissions(FileConfiguration configuration) {
-        HELP_PERMISSION = configuration.getString("permission.help");
-        WORLD_COMMAND_PERMISSION = configuration.getString("permission.worlds");
-        LOAD_WORLDS_PERMISSION = configuration.getString("permission.load-world");
-        UNLOAD_WORLDS_PERMISSION = configuration.getString("permission.unload-world");
-        CREATE_WORLD_PERMISSION = configuration.getString("permission.create-world");
+        HELP_PERMISSION = configuration.getString("permissions.help");
+        WORLD_COMMAND_PERMISSION = configuration.getString("permissions.worlds");
+        LOAD_WORLDS_PERMISSION = configuration.getString("permissions.load-world");
+        UNLOAD_WORLDS_PERMISSION = configuration.getString("permissions.unload-world");
+        CREATE_WORLD_PERMISSION = configuration.getString("permissions.create-world");
     }
 
 }
